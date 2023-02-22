@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.buscar{
+  background-color: rgb(82, 82, 82);
+  height: 10vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.title{
+  height: 15vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.text::after{
+  content: " <- Siguiente!";
+  color: red;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ante::before {
+    content: "anterior->";
+    color: red;
+}
+
