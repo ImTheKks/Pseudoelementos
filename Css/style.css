@@ -13,29 +13,114 @@ body{
   align-items: center;
 }
 .title{
-  height: 15vh;
+  height: 50vh;
+  background-image: url(../images/css3.png);
+ color: white;
+  background-position: center;
+  background-size: 100vh;
   display: flex;
   justify-content: center; 
   align-items: center;
 }
-
-
-h1{
-  display: flex;
-  justify-content: center;
+.pseudo{
+  padding: 12vh;
 }
-
-.text::after{
-  content: " <- Siguiente!";
-  color: red;
-}
-.text{
+.ques{
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 15vh; 
 }
-.ante::before {
-    content: "anterior->";
+.defi{
+  text-align: justify;
+}
+.inici{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: rgb(214, 214, 214);
+}
+.caja{
+  text-align: justify;
+  padding: 5vh;
+ 
+}
+.tcaja{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  background-color: rgb(214, 214, 214);
+  
+}
+.click{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+  select {
+    margin: 8px;
+  }
+
+  /* Etiquetas para entradas marcadas */
+  .yes:checked + label {
     color: red;
-}
+  }
+
+  /* Elemento Radio, cuando está marcado */
+  .yes[type="radio"]:checked {
+    box-shadow: 0 0 0 3px #183A9E ;
+  }
+
+  /* Elemento Checkbox, cuando está marcado */
+  input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px #183A9E;
+  }
+
+  /* Elementos Option, cuando se seleccionan */
+  option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+  }
+  
+    .circulo:default {
+      box-shadow: 0 0 2px 1px coral;
+    }
+    
+    .circulo:default + label {
+      color: coral;
+    }
+    input[type="text"]:disabled {
+      background: rgb(214, 214, 214);
+    }
+    .box{
+      background-color: rgb(214, 214, 214);
+      height: 10vh;
+      width: 13vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+    }
+    .box:empty{
+      background-color: #183A9E;
+    }
+    .buttoncara:enabled{
+      color: #183A9E;
+    }
+    .cajacara{
+      display: flex;
+      justify-content: center;
+    }
+    .cajacaja{
+      display: flex;
+      align-items: center;
+    }
+    
+
+
+
 

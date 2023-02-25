@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,27 +8,134 @@
     <link rel="stylesheet" href="Css/style.css">
   </head>
   <body>
-    <div class="row">
-        <header class="col-xs-12 col-md-12 col-lg-12 buscar">
-            <h3>buscador/menú</h3>
+    
+        <header class="col-xs-12 col-md-12 col-lg-12 buscar">          
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">ImTheKKs</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/ImTheKks">GitHub</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=attctO9YQnk">CuleTema</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </header>
-    </div>
+    
     <div>
-      <nav class="title">
-        <h1>PSEUDOELEMENTOS</h1>
+      <nav class="col-xs-12 col-md-12 col-lg-12 title">
+        <h1>PSEUDOCLAESE Y PSEUDOELEMENTOS</h1>
       </nav>
+      <div class="row">
+        <article class="col-xs-12 col-md-12 col-lg-6 pseudo">
+          <h1 class="ques">¿Que es una Pseudoclase?</h1>
+          <p class="defi">Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector.</p>
+        </article>
+        <article class="col-xs-12 col-md-12 col-lg-6 pseudo">
+          <h1 class="ques">¿Ques es un Pseudoelemento?</h1>
+          <p class="defi">Al igual que las pseudo-classes , los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.</p>
+        </article>
+      </div>
+      <div class="row">
+        <article class="col-xs-12 col-md-12-col-lg-12 inici">
+          <h1 class="tt1">PSEUDOCLASES</h1>
+        </article>
+      </div>
+      <div class="row">
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::active</h1>
+          <p>representa un elemento (como un botón) que el usuario está activando. Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta. La pseudo-clase :active se usa comúnmente en los elementos a y button, pero también se puede usar en otros elementos.</p>
+          <a class="click" href="https://img.wattpad.com/9979ae56c7f3d5dfb0b28603c8d3b1b6615194d2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f52507a6474367a746272536467413d3d2d3837323132353739382e313630386130356363656563623339613338313635313933383438352e6a7067">Haz click :DD</a>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::checked</h1>
+          <p>representa cualquier radio (input type="radio" (en-US)), checkbox ("input type="checkbox") u option ("option" en un elemento "select") que está marcado o conmutado a un estado on. Entendio?!</p>
+            <div>
+              <input type="radio" name="my-input" class="yes">
+              <label for="yes">Yes</label>
+            
+              <input type="radio" name="my-input" class="yes">
+              <label for="no">No</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" name="my-checkbox" id="opt-in">
+              <label for="opt-in">Si entendi!</label>
+            </div>
+            
+            <select name="my-select" id="fruit">
+              <option value="opt1">Si entendi :DDD</option>
+              <option value="opt2">Más o menos</option>
+              <option value="opt3">No entendi DDD:</option>
+            </select>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::default</h1>
+          <p>representa cualquier elemento de formulario que sea el predeterminado entre un grupo de elementos relacionados. Entendió?
+            (AYUDA, NO ME FUNCIONA CORRECTAMENTE DDDD:)
+          </p>
+          <input type="radio" name="season" class="circilo" checked>
+          <label for="circulo">Si :DD</label>
+          <input type="radio" name="season" class="circilo">
+          <label for="circulo">Más o menos</label>
+
+          <input type="radio" name="season" class="circulo">
+          <label for="circulo">No DDD:</label>
+
+          <input type="radio" name="season" class="circulo">
+          <label for="circulo">No sé, ayuda</label>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::disabled</h1>
+          <p>representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede ser activado (por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada) ni aceptar el foco. El elemento tiene además un estado habilitado en el cual puede ser activado o recibir foco.</p>
+          
+          <legend>Ejemplo:</legend>
+          <label for="billing_is_shipping">Datos personales</label>
+          <input type="checkbox" id="caja_check" checked>
+          <br>
+          <input type="text" placeholder="Nombres" disabled>
+          <input type="text" placeholder="Apellidos" disabled>
+          <input type="text" placeholder="Dirección" disabled>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::empty</h1>
+          <p>representa cualquier elemento que no tenga hijos. Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco). Los comentarios o las instrucciones de procesamiento no afectan si un elemento se considera vacío.</p>
+          <div class="cajacara">
+            <div class="box">gray</div>
+            <div class="box"></div>
+            <div class="box">  </div>
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::enabled</h1>
+          <p>representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él, acepta que se le introduzca texto, etc.) o si accepta el foco.</p>
+          <div class="cajacara">
+            <input type="button" value="~(￣▽￣)~*" class="buttoncara">
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::first</h1>
+          <p>La pseudo-clase :first de CSS, utilizada con la regla-at @page, representa la primera página de un documento impreso.</p>
+          <p>Este... no netendi como hacer lo de JavaScrip :c</p>
+        </aside>
+      </div>
     </div>
-    <div class="row">
-        <article class="col-xs-12 col-md-6 col-lg-3 after">
-            <h1>:after</h1>
-            <p class="text">Es para añadir un elemento al final como el</p>
-        </article>
-        <article class="col-xs-12 col-md-6 col-lg-3 before">
-            <h1>::before</h1>
-            <p class="ante">Es para añadir un elemento aql inicio como el</p>
-        </article>
-        <article class="col-xs-12 col-md-6 col-lg-3 backdrop"></article>
-    </div> 
+   
     <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
